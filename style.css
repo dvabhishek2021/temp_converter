@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(https://www.calculator.land/wp-content/uploads/2022/12/temperature-converter-schema.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed ;
+    background-size: 100% 100% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    height: 100vh;
+    top: 10vh;
+    margin: 0;
+}
+
+.converter {
+    background:rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 8px;
+    /* position: relative;
+    left: 40%; */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+}
+.converter h2,label{
+    color: white;
+}
+
+input[type="number"], button {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #5e9861;
+}
+
+.body2{
+    min-height: max-content;
+    width: 90%;
+    padding: 4vw;
+} 
+.con{
+    
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.moving-text{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.moving-text::-webkit-scrollbar{
+    display: none;
+}
+
+
+.moving-text h1{
+    font-size: 9vw;
+    display: inline-block;
+    color: white;
+}
+
+.gola{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background-color: red;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
